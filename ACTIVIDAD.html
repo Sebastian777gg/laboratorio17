@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web Personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <div id="bienvenida" class="overlay">
+         <div class="mensaje">
+             <h2>¡Bienvenido a Mi Página Web!</h2>
+            <button onclick="mostrarPagina()">Haz clic aquí para entrar</button>
+         </div>
+    </div>
+    <center>
+        <header><h1>Yordin Sebastian Figueroa Martinez</h1></header>
+    </center>
+    <br>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="#biografia">Biografia</a></li>
+                <li><a href="#habilidades">Habilidades tecnicas</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <div id="biografia">
+            <h2 style="text-align: center;">Biografía</h2>
+            <p>Yordin Sebastian Figueroa Martinez nació el 04 de marzo de 1990 en Valledupar, Colombia. Es ingeniero de sistemas graduado de la Universidad de Valledupar, donde se destacó por su pasión por el desarrollo de software.
+                Actualmente, trabaja en una reconocida empresa de tecnología, donde ha contribuido a varios proyectos exitosos gracias a su habilidad para resolver problemas complejos.
+                Además de su carrera profesional, Yordin es un defensor de la educación tecnológica en su comunidad, organizando talleres y seminarios para jóvenes interesados en la programación. En su tiempo libre, disfruta de la lectura, el ciclismo y la música.   
+            </p>
+
+
+        </div>
+    <div id="habilidades">
+        <h2 style="text-align: center;">Habilidades</h2>
+        <p>Yordin Sebastian Figueroa Martinez es un ingeniero de sistemas con una sólida experiencia en desarrollo de software. Sus habilidades incluyen:</p>
+        <ul class="habilidad">
+            <li><strong>Programación:</strong> Experto en lenguajes como JavaScript, Python.</li>
+            <li><strong>Desarrollo Web:</strong> Proficiente en HTML, CSS y frameworks como React y Angular.</li>
+            <li><strong>Bases de Datos:</strong> Conocimiento basico en SQL.</li>
+            <li><strong>Gestión de Proyectos:</strong> Experiencia en metodologías ágiles como Scrum y Kanban.</li>
+            <li><strong>Resolución de Problemas:</strong> Capacidad para abordar y solucionar problemas complejos de manera eficiente.</li>
+        </ul>
+        
+    </div>
+  
+    <div id="formulario">
+        <h2 style="text-align: center;">Formulario</h2>
+        <form class="formulario" action="#" method="POST" enctype="multipart/form-data" id="registroForm">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+    
+            <label>Correo Electrónico:</label>
+            <input type="email" name="email" required>
+    
+            <label>Contraseña:</label>
+            <input type="password" name="password" required>
+    
+            <label>Imagen de Perfil:</label>
+            <input type="file" name="imagen" id="imagen" accept="image/*" onchange="mostrarImagen(event)" required>
+    
+            <div class="centrar">
+                <img id="ver-imagen" src="#" alt="Vista previa de la imagen" />
+            </div >
+    
+            <button type="submit">Registrar</button>
+        </form>
+    </div>  
+
+    <footer id="contacto" class="footer"> 
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+        <p>Contacto:<a href="mailto:sebastianfm738@gmail.com">sebastianfm738@gmail.com</a></p>
+        <p>Teléfono: +57 320 782 3313</p>
+        <p>Dirección: Calle Falsa 123, Valledupar, Colombia</p>
+    </footer>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
